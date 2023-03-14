@@ -1,23 +1,16 @@
-let counterValue = 0;
 
-const decrBtnEl = document.querySelector('.decrement');
-const incrBtnEl = document.querySelector(".increment");
 
-decrBtnEl.addEventListener("click", onTargetBtnClick);
-incrBtnEl.addEventListener("click", onTargetBtnClick);
+const decrBtnEl = document.querySelector('.data-action="decrement"');
+const incrBtnEl = document.querySelector('[data-action="increment"]');
+const value = document.querySelector('#value');
+  let counterValue = 0;
 
-const onTargetBtnClick = () => {
-    console.log('Button was clicked')
+
+decrBtnEl.addEventListener("click", onBtnClickMinus);
+incrBtnEl.addEventListener("click", onBtnClickPlus);
+
+function onBtnClickPlus = () {
+  counterValue += value; 
 }
 
-function decrement() {
-  counterValue += 1;
-}
-
-function increment() {
-   updateValue(++counterValue); 
-}
-
-document.addEventListener("keydown", (event) => {
-  console.log("Keydown: ", event);
-});
+c
