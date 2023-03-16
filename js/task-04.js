@@ -1,16 +1,18 @@
 
 
-const decrBtnEl = document.querySelector('.data-action="decrement"');
-const incrBtnEl = document.querySelector('[data-action="increment"]');
-const value = document.querySelector('#value');
+const decrBtnEl = document.querySelector('[data-action="decrement]');
+const incrBtnEl = document.querySelector('[data-action="increment]');
+const value = document.getElementById('value');
   let counterValue = 0;
 
 
 decrBtnEl.addEventListener("click", onBtnClickMinus);
 incrBtnEl.addEventListener("click", onBtnClickPlus);
 
-function onBtnClickPlus = () {
-  counterValue += value; 
+function onBtnClickPlus() {
+  value += counterValue; 
 }
 
-c
+function onBtnClickMinus() {
+
+}
