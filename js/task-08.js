@@ -21,6 +21,11 @@ loginForm.addEventListener('submit', (event) => {
   }
 });
 
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  event.target.reset()
+});
+
 
 // btnLogin.addEventListener("submit", (event) => {
 //   event.preventDefault();
