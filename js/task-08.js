@@ -11,7 +11,7 @@ loginForm.addEventListener('submit', (event) => {
 
   if (email === '' || password === '') {
 
-    alert("Email fields should not be empty");
+    alert("Email and Password fields should not be empty");
 
   } else {
     alert("This form has been successfully submitted!");

@@ -1,18 +1,42 @@
 
 
-const decrBtnEl = document.querySelector('[data-action="decrement]');
-const incrBtnEl = document.querySelector('[data-action="increment]');
+// const decrBtnEl = document.querySelector('button[data-action="decrement]');
+// const incrBtnEl = document.querySelector('button[data-action="increment]');
+
+
 const value = document.getElementById('value');
-  let counterValue = 0;
+const plus = document.querySelector('[data-action="increment"]');
+const minus = document.querySelector('[data-action="decrement"]');
+
+let counterValue = 0;
+
+function increment() {
+  counterValue += 1;
+
+  value.textContent = counterValue;
+};
+
+function decrement() {
+  counterValue -= 1;
+  
+  value.textContent = counterValue;
+};
+
+plus.addEventListener("click", increment);
+minus.addEventListener("click", decrement);
+
+// const increment = () => {
+//   counterValue += 1;
+
+//   value.textContent = counterValue;
+// };
+
+// const decrement = () => {
+//   counterValue -= 1;
+
+//   value.textContent = counterValue;
+// };
 
 
-decrBtnEl.addEventListener("click", onBtnClickMinus);
-incrBtnEl.addEventListener("click", onBtnClickPlus);
 
-function onBtnClickPlus() {
-  value += counterValue; 
-}
 
-function onBtnClickMinus() {
-
-}
